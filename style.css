@@ -1,0 +1,103 @@
+body{
+    /* background-image: url(images/sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+/* NAVBAR - NAVBAR - NAVBAR - NAVBAR - NAVBAR - NAVBAR - NAVBAR - NAVBAR - NAVBAR - NAVBAR - NAVBAR - NAVBAR */
+nav{
+    font-family: 'Stolzl';
+    font-style: normal;
+    height: 80px;
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px 0px 30px;
+}
+.nav-logo-img{
+    width: 80px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0px 10px;
+    letter-spacing: 1px;
+}
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    align-items: center;
+}
+nav .menu-btn i{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+#nav-bar-click{
+    display: none;
+}
+
+.navbar-items{
+    margin-top: 12px;
+    margin-right: 25px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    color: #999999;
+}
+/* btn btn btn */
+.nav-sponsor-btn{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    color: #FFFFFF;
+    padding: 10px 24px;
+    gap: 24px;
+    background: #D96A2C;
+    border-radius: 100px;
+    border: none;
+}
+
+@media (max-width: 940px){
+    nav .menu-btn i{
+        display: block;
+    }
+    
+    nav ul{
+        position: fixed;
+        top: 100px;
+        left: -100%;
+        background-color: none;
+        z-index: 1;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all .4s ease;
+    }
+    #nav-bar-click:checked ~ ul{
+        left: 0;
+    }
+   
+    nav ul li{
+        margin: 40px 0px;
+    }
+    nav ul li a{
+        display: block;
+    }
+    .navbar-items{
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+
+}
